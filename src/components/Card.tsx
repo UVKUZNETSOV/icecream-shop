@@ -39,7 +39,7 @@ const Card = (props: CardProp) => {
   return (
     <li
       key={props.itemKey}
-      className="w-72 h-96 flex flex-col rounded-xl border p-3 hover:shadow-md cursor-pointer transition-all justify-between bg-white"
+      className="w-72 h-[370px] flex flex-col rounded-xl border p-3 hover:shadow-md cursor-pointer transition-all justify-between bg-white"
     >
       <div className="flex flex-col gap-4">
         <img className="w-4/5" src={props.image} />
@@ -48,7 +48,7 @@ const Card = (props: CardProp) => {
       <div className="flex justify-between items-center">
         {!isClicked ? (
           <button onClick={addItem} className="transition-all">
-            <div className="bg-black hover:bg-red-500 text-white flex items-center px-3 py-2 gap-2 rounded-lg transition-all">
+            <div className="bg-blue-500 hover:bg-red-500 text-white flex items-center px-3 py-2 gap-2 rounded-lg transition-all">
               <img className="w-5 fill-white" src={cart} alt="" />
               <p>В корзину</p>
             </div>

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 import Header from "./components/shared/Header";
+import Footer from "./components/shared/Footer";
 import Card from "./components/Card";
 import { Products } from "./types/types";
 
@@ -25,10 +26,11 @@ function App() {
 
   return (
     <>
+      <div className="flex flex-col min-h-screen">
       <Header />
       <div className="flex flex-col items-center w-screen justify-center bg-center bg-no-repeat bg-cover bg-fixed">
         {isLoaded ? (
-          <ul className="mt-28 flex flex-wrap gap-5 justify-center">
+          <ul className="mt-[100px] flex flex-wrap gap-5 justify-center">
             {products.slice(0, 10).map((item, index) => (
               <Card
                 title={item.title}
@@ -44,8 +46,9 @@ function App() {
           <div className="h-screen flex justify-center items-center">
             <Loader />
           </div>
-          
         )}
+      </div>
+      <Footer />
       </div>
     </>
   );
