@@ -42,7 +42,7 @@ const Card = (props: CardProp) => {
       className="w-72 h-[370px] flex flex-col rounded-xl border p-3 hover:shadow-md cursor-pointer transition-all justify-between bg-white"
     >
       <div className="flex flex-col gap-4">
-        <img className="w-4/5" src={props.image} />
+        <img className="w-4/5 h-4/5" src={props.image} />
         <h1 className="text-slate-700 leading-5">{props.title}</h1>
       </div>
       <div className="flex justify-between items-center">
