@@ -1,9 +1,8 @@
-version: "3"
+version: "3.8"
 
 services:
-  frontend:
+  vite-prod:
     build: .
+    container_name: icecream-frontend
     ports:
-      - "3000:80"
-    container_name: vite_react_app
-    restart: always
+      - "3000:8080"  # <твой-айп>:8080
