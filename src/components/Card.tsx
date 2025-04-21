@@ -50,13 +50,13 @@ const Card = (props: CardProp) => {
           <button onClick={addItem} className="transition-all">
             <div className="bg-blue-500 hover:bg-red-500 text-white flex items-center px-3 py-2 gap-2 rounded-lg transition-all">
               <img className="w-5 fill-white" src={cart} alt="" />
-              <p>В пизду</p>
+              <p>В корзину</p>
             </div>
           </button>
         ) : (
           <button onClick={deleteItem} className="transition-all">
             <div className="bg-red-500 text-white flex items-center px-3 py-2 gap-2 rounded-lg transition-all">
-              <p>Убрать нахуй бля</p>
+              <p>Убрать из корзины</p>
             </div>
           </button>
         )}
