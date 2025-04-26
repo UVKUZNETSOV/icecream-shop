@@ -56,7 +56,7 @@ const Card = (props: CardProp) => {
         ) : (
           <button onClick={deleteItem} className="transition-all">
             <div className="bg-red-500 text-white flex items-center px-3 py-2 gap-2 rounded-lg transition-all">
-              <p>Убрать из корзины</p>
+              <p>Убрать нахуй</p>
             </div>
           </button>
         )}
